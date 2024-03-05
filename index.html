@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <!-- #SIDEBAR -->
+
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure class="avatar-box">
+      <!-- Update avatar image path if you have a different one -->
+      <img src="./assets/images/my-avatar.png" alt="Ambuj Hakhu" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="Ambuj Hakhu">Ambuj Hakhu</h1>
+      <p class="title">Machine Learning/AI Engineer</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+  <div class="sidebar-info_more">
+
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <a href="mailto:ambuj.hakhu@gmail.com" class="contact-link">ambuj.hakhu@gmail.com</a>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Phone</p>
+          <a href="tel:+5132546623" class="contact-link">+1 (513)254-6623</a>
+        </div>
+      </li>
+
+      <!-- Update or remove the birthday section if not wanted -->
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+          <address>Cincinnati, OH</address>
+        </div>
+      </li>
+
+      <!-- Update LinkedIn or other social media links as needed -->
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">LinkedIn</p>
+          <a href="YourLinkedInProfileURL" class="contact-link">LinkedIn</a> <!-- Replace YourLinkedInProfileURL with your actual LinkedIn URL -->
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="separator"></div>
+
+    <!-- Update with your actual social media profiles or remove if not applicable -->
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="YourFacebookProfileURL" class="social-link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="YourTwitterProfileURL" class="social-link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="YourInstagramProfileURL" class="social-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+</aside>
+
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+      
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="Resume">
+                <a href="https://drive.google.com/file/d/1-_B9jRDum_57k_wfOdCoVhWiwhFeLe_m/view" target="_blank">Resume</a>
+            </button>
+        </li>
+        
+
+      
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+    <header>
+        <h2 class="h2 article-title">About me</h2>
+    </header>
+    <section class="about-text">
+        <p>
+            As a Machine Learning/AI Engineer currently pursuing a Masters of Engineering in Computer Science at the University of Cincinnati, I specialize in developing innovative AI solutions. My expertise spans Python, machine learning frameworks like TensorFlow and PyTorch, and implementing predictive analytics and NLP solutions.
+        </p>
+        <p>
+            Passionate about transforming complex challenges into actionable, data-driven insights, I am dedicated to leveraging AI to solve real-world problems. With a background in electronics and telecommunication, my approach combines technical proficiency with a keen understanding of digital transformation's impact.
+        </p>
+    </section>
+</article>
+
+    
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software development</h4>
+
+                <p class="service-item-text">
+                  Implement algorithms and solve complex problems to develop efficient, scalable software applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Design and develop responsive websites, ensuring optimal user experience across various devices and browsers.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning /Artifical Intelligence</h4>
+
+                <p class="service-item-text">
+                  Design and train predictive model, utilizing data to improve and automate decision-making processes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Computing</h4>
+
+                <p class="service-item-text">
+                  Manage and optimize cloud infrastructure to ensure seamless, scalable, and secure access to computing resources.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+            <h1>Ambuj Hakhu</h1>
+            <p>+1 (513) 254 6623 | Cincinnati, OH | <a href="mailto:ambuj.hakhu@gmail.com">ambuj.hakhu@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/ambuj-hakhu/">linkedin.com/in/ambuj-hakhu/</a> | <a href="https://github.com/ambuj991">github.com/ambuj991</a></p>
+        </header>
+    
+        <section class="education">
+            <h2>Education</h2>
+            <div>
+                <h3>University of Cincinnati, College of Engineering and Applied Science</h3>
+                <p>Masters of Engineering, Computer Science, CGPA: 3.73/4 (2024)</p>
+            </div>
+            <div>
+                <h3>SVKM’s NMIMS University</h3>
+                <p>Bachelor of Technology, Electronics and Telecommunication (2023)</p>
+            </div>
+        </section>
+    
+        <section class="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C/C++, C#, Java, JavaScript, SQL</li>
+                <li>Web Technologies: HTML5, CSS3, Bootstrap, ReactJS, ExpressJS, NodeJS, Flask, jQuery, RESTful APIs</li>
+                <li>Tools: MongoDB, PostgreSQL, SSMS, Git/GitHub, AWS, Azure, Linux, Dockers/Kubernetes</li>
+                <li>ML/AI Frameworks: Tensorflow, PyTorch, GPT, NLTK, CNNs, RNNs, GANs, Transformers, BERT, OpenCV</li>
+            </ul>
+        </section>
+    
+        <section class="credentials">
+            <h2>Credentials</h2>
+            <ul>
+                <li>Google Cloud: How Google does Machine Learning</li>
+                <li>UC SanDiego: Algorithmic Toolbox & Data Structures</li>
+                <li>IBM: Building Chat Bot Applications</li>
+                <li>Coursera: Developing Artificial Intelligence Applications on Azure</li>
+            </ul>
+        </section>
+    
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div>
+                <h3>Artificial Intelligence Intern (July 2021 – June 2023)</h3>
+                <p>CloudSocial, Mumbai, India</p>
+                <ul>
+                    <li>Utilized Meta’s Llama model within a Retrieval-Augmented Generation (RAG) system, significantly enhancing document retrieval by achieving a 40% improvement in retrieval speed.</li>
+                    <li>Demonstrated expertise in applying LLM techniques and vector storage optimization through ChromaDB, showcasing the transformative impact of the models on AI-driven content summarization and question-answering systems.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Machine Learning Intern (Aug 2022 – Sept 2022)</h3>
+                <p>Tata Consultancy Services ION, Mumbai, India</p>
+                <ul>
+                    <li>Led an intern team to develop a sentiment analysis, achieving 84% accuracy in emotion detection from texts using DistilBERT for preprocessing and classification.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Software Engineering Intern (June 2022 – July 2022)</h3>
+                <p>Reliance Jio, Mumbai, India</p>
+                <ul>
+                    <li>Developed a Python-based simulation suite for 5G network slicing scenarios, encompassing base stations, clients, and diverse traffic patterns.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>Intent Classification and Sarcasm Detection</h3>
+                <p>Developed a web-based Natural Language Processing system for intent recognition and sarcasm detection using Flask, TensorFlow, and deep learning algorithms such as RNNs, LSTMs, BERT achieving 82% accuracy.</p>
+            </div>
+            <div>
+                <h3>Share Sphere, A Social Media Application</h3>
+                <p>A feature-rich MERN social media app (MongoDB, Express.js, React.js, Node.js) with robust JWT authentication, dynamic pagination, advanced search/filtering, and interactive commenting.</p>
+            </div>
+            <div>
+                <h3>Hybrid Artificial Intelligence Driven Urban Traffic Optimization</h3>
+                <p>Employed a hybrid AI strategy blending Reinforcement Learning algorithms (DQN, A2C), classical pathfinding (Dijkstra, A-star), and CNN-based traffic predictions to achieve a 7% boost in route efficiency and reduced travel times.</p>
+            </div>
+        </section>
+    </article>
+    
+
+
+
+
+
+
+
+      
+
+
+
+     
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
