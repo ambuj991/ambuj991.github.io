@@ -1,19 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -1872,14 +1857,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
 
 
-  .resume {
-    display: none;
-  }
-  
-  .resume.active {
-    display: block;
-  }
-  
+
   /**
 	 * RESUME
 	 */
@@ -1887,3 +1865,43 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+/* extra css to match */
+
+/* Assuming general styles apply, specify only if additional customization is needed */
+.timeline, .skills-list, .content-card {
+  background: var(--eerie-black-2); /* Dark background for sections */
+  border: 1px solid var(--jet); /* Border color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 15px; /* Padding around the content */
+  box-shadow: var(--shadow-1); /* Shadow for depth */
+}
+
+.title-wrapper .h3, .skills-title {
+  color: var(--white-2); /* Light color for titles */
+}
+
+.timeline-item, .skills-item {
+  color: var(--light-gray); /* Light gray for item text */
+}
+
+.icon-box {
+  background: var(--border-gradient-onyx); /* Stylish background for icons */
+}
+
+/* Specific to skill progress bars, if used */
+.skill-progress-fill {
+  background: var(--text-gradient-yellow); /* Gradient for skill progress */
+}
+/* Apply yellow text gradient to section titles */
+.h3, .skills-title, .article-title {
+  background: var(--text-gradient-yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Required for gradient text */
+}
+
+/* If .h3 or .skills-title are not directly applicable, adjust the selector to target the specific titles */
+
+
